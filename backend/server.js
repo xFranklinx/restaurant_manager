@@ -12,6 +12,7 @@ mongoDB.connect()
 
 // Routes
 const usersRoute = require('./api/routes/usersRoute')
+const menuItemsRoute = require('./api/routes/menuItemsRoute')
 
 app.use(express.json())
 app.use(morgan('combined'))
@@ -25,6 +26,8 @@ app.get('/api/v1/', (req, res) => {
 })
 
 app.use('/api/v1/users', usersRoute)
+app.use('/api/v1/menuItems', menuItemsRoute)
+
 
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}!`.yellow.bold)

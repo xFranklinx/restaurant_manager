@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled, Drawer as MuiDrawer, List, Divider, IconButton, ListSubheader } from '@mui/material/';
+import { styled, Drawer as MuiDrawer, List, Divider, IconButton } from '@mui/material/';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 import SidebarItem from './SidebarItem';
